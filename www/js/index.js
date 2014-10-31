@@ -51,8 +51,14 @@ var app = {
         var ref = window.open(loginURL, '_blank', 'location=yes');
 
         window.ref = ref;
-        console.log('test');
+		
+        
     }
 };
+
+var extractKey = function(ref){
+	    var pat = /session_key=(.+);/;
+        var sessionKey = ref.window.document.cookie.match(pat)[1];
+	}
 
 app.initialize();
