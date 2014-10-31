@@ -51,14 +51,24 @@ var app = {
         var ref = window.open(loginURL, '_blank', 'location=yes');
 
         window.ref = ref;
-		
-        
+
+        var interval = setInterval(function() {
+          try {
+            var key = extractKey(ref);
+            clearInterval(interval);
+            console.log('got session key, move to step 3', key);
+          } catch (err) {
+            console.log('session key not set yet', err.stack);
+          }
+        }, 1000)
+
     }
 };
 
 var extractKey = function(ref){
-	    var pat = /session_key=(.+);/;
-        var sessionKey = ref.window.document.cookie.match(pat)[1];
-	}
+  var pat = /session_key=(.+);/;
+  var sessionKey = ref.window.document.cookie.match(pat)[1].split(';')[0];
+  return sessionKey;
+}
 
 app.initialize();
