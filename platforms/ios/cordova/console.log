@@ -1,0 +1,27 @@
+2014-10-31 23:04:37.780 HelloCordova[19028:141680] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/keyvan/Library/Developer/CoreSimulator/Devices/503F1766-7E2B-4334-9519-16903B14ACFE/data/Containers/Data/Application/4AFCAC71-A174-4934-8364-80D199CF12D4/Library/Cookies/Cookies.binarycookies
+2014-10-31 23:04:37.941 HelloCordova[19028:141680] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-31 23:04:37.942 HelloCordova[19028:141680] Multi-tasking -> Device: YES, App: YES
+2014-10-31 23:04:37.980 HelloCordova[19028:141680] Unlimited access to network resources
+2014-10-31 23:04:37.990 HelloCordova[19028:141680] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-31 23:04:40.727 HelloCordova[19028:141680] Resetting plugins due to page load.
+2014-10-31 23:04:40.943 HelloCordova[19028:141680] Finished load of: file:///Users/keyvan/Library/Developer/CoreSimulator/Devices/503F1766-7E2B-4334-9519-16903B14ACFE/data/Containers/Bundle/Application/4FAEFFAB-CFB5-4469-A9A1-73566BB800EF/HelloCordova.app/www/index.html
+2014-10-31 23:04:41.400 HelloCordova[19028:141680] THREAD WARNING: ['InAppBrowser'] took '423.667969' ms. Plugin should use a background thread.
+2014-10-31 23:07:01.430 HelloCordova[19303:144185] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-31 23:07:01.432 HelloCordova[19303:144185] Multi-tasking -> Device: YES, App: YES
+2014-10-31 23:07:01.441 HelloCordova[19303:144185] Unlimited access to network resources
+2014-10-31 23:07:01.446 HelloCordova[19303:144185] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-31 23:07:01.875 HelloCordova[19303:144185] Resetting plugins due to page load.
+2014-10-31 23:07:01.970 HelloCordova[19303:144185] Finished load of: file:///Users/keyvan/Library/Developer/CoreSimulator/Devices/503F1766-7E2B-4334-9519-16903B14ACFE/data/Containers/Bundle/Application/DC235437-A36F-4F0C-8914-949288125D34/HelloCordova.app/www/index.html
+2014-10-31 23:07:02.330 HelloCordova[19303:144185] THREAD WARNING: ['InAppBrowser'] took '316.462891' ms. Plugin should use a background thread.
