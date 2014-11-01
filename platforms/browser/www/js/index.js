@@ -57,18 +57,40 @@ var app = {
             var key = extractKey(ref);
             clearInterval(interval);
             console.log('got session key, move to step 3', key);
+            getStreamURL('618916', 'kp_hash', key, function(err, url) {
+              if (err) throw err;
+              alert(url)
+            })
           } catch (err) {
             console.log('session key not set yet', err.stack);
           }
         }, 1000)
-
     }
 };
 
 var extractKey = function(ref){
   var pat = /session_key=(.+);/;
-  var sessionKey = ref.window.document.cookie.match(pat)[1];
+  var sessionKey = ref.window.document.cookie.match(pat)[1].split(';')[0];
   return sessionKey;
+}
+
+var getStreamURL = function(deviceId, hashName, key, callback) {
+  var http = new XMLHttpRequest();
+  var url = 'https://healthmate.withings.com/baby/service/presence';
+  var params = "action=get&sessionid="+key+"&deviceid="+deviceId;
+  http.open("POST", url, true);
+  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+  http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+  http.onreadystatechange = function() {
+    if (http.readyState == 4) {
+      var data = JSON.parse(http.responseText);
+      var ip = data.body.device.proxy_ip
+      var hash = data.body.device[hashName]
+      var url = "rtmp://"+ip+":1935/"+hash+"/gentilflash.swf"
+      callback(null, url)
+    }
+  }
+  http.send(params);
 }
 
 app.initialize();
