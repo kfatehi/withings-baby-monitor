@@ -57,7 +57,7 @@ var app = {
             var key = extractKey(ref);
             clearInterval(interval);
             console.log('got session key, move to step 3', key);
-            getStreamURL('618916', 'kp_hash', key, function(err, url) {
+            getStreamURL('618916', key, function(err, url) {
               if (err) throw err;
               alert(url)
             })
@@ -74,7 +74,7 @@ var extractKey = function(ref){
   return sessionKey;
 }
 
-var getStreamURL = function(deviceId, hashName, key, callback) {
+var getStreamURL = function(deviceId, key, callback) {
   var http = new XMLHttpRequest();
   var url = 'https://healthmate.withings.com/baby/service/presence';
   var params = "action=get&sessionid="+key+"&deviceid="+deviceId;
@@ -85,7 +85,7 @@ var getStreamURL = function(deviceId, hashName, key, callback) {
     if (http.readyState == 4) {
       var data = JSON.parse(http.responseText);
       var ip = data.body.device.proxy_ip
-      var hash = data.body.device[hashName]
+      var hash = data.body.device.kp_hash
       var url = "rtmp://"+ip+":1935/"+hash+"/gentilflash.swf"
       callback(null, url)
     }
