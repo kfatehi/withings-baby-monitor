@@ -59,6 +59,7 @@ var app = {
             console.log('got session key, move to step 3', key);
             getStreamURL('618916', key, function(err, url) {
               if (err) throw err;
+              ref.window.close();
               alert(url)
             })
           } catch (err) {

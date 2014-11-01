@@ -25,3 +25,16 @@ https://developer.apple.com/icloud/documentation/data-storage/
 2014-10-31 23:07:01.875 HelloCordova[19303:144185] Resetting plugins due to page load.
 2014-10-31 23:07:01.970 HelloCordova[19303:144185] Finished load of: file:///Users/keyvan/Library/Developer/CoreSimulator/Devices/503F1766-7E2B-4334-9519-16903B14ACFE/data/Containers/Bundle/Application/DC235437-A36F-4F0C-8914-949288125D34/HelloCordova.app/www/index.html
 2014-10-31 23:07:02.330 HelloCordova[19303:144185] THREAD WARNING: ['InAppBrowser'] took '316.462891' ms. Plugin should use a background thread.
+2014-11-01 01:24:04.197 HelloCordova[28399:222710] Apache Cordova native platform version 3.6.3 is starting.
+2014-11-01 01:24:04.198 HelloCordova[28399:222710] Multi-tasking -> Device: YES, App: YES
+2014-11-01 01:24:04.225 HelloCordova[28399:222710] Unlimited access to network resources
+2014-11-01 01:24:04.232 HelloCordova[28399:222710] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-11-01 01:24:05.102 HelloCordova[28399:222710] Resetting plugins due to page load.
+2014-11-01 01:24:05.285 HelloCordova[28399:222710] Finished load of: file:///Users/keyvan/Library/Developer/CoreSimulator/Devices/503F1766-7E2B-4334-9519-16903B14ACFE/data/Containers/Bundle/Application/7D02F7D1-FD2B-48C5-9A7F-4E19BB017685/HelloCordova.app/www/index.html
+2014-11-01 01:24:05.596 HelloCordova[28399:222710] THREAD WARNING: ['InAppBrowser'] took '280.104980' ms. Plugin should use a background thread.
